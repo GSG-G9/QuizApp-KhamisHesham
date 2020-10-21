@@ -7,16 +7,44 @@
   </head>
   <body>
     <div class="quiz-app">
+      <h1>Quiz App</h1>
       <div class="container">
-        <h1>Quiz App</h1>
-        <form>
-          <input type="text" placeholder="Enter name...." />
-          <div class="sub">
-            <input type="submit" value="info" />
-            <input type="submit" value="play" />
-            <input type="submit" value="leadboard" />
+        <div class="main">
+          <form>
+            <input id="p-name" type="text" placeholder="Enter name...." />
+            <div class="sub">
+              <input
+                class="information"
+                type="button"
+                value="Game Information"
+              />
+              <input class="play" type="button" value="Play" />
+              <input class="leaderboard" type="button" value="Leaderboard" />
+            </div>
+          </form>
+        </div>
+
+        <div class="info">
+          <h2>brief description</h2>
+          <p>
+            Quiz game have ten MC questions with 4 options to each question
+            (only one right answer).
+          </p>
+        </div>
+
+        <div class="quiz-area">
+          <div class="answers-area"></div>
+          <button class="submit-button">Submit Answer</button>
+          <div class="bullets">
+            <div class="spans"></div>
+            <div class="countdown"></div>
           </div>
-        </form>
+          <div class="results"></div>
+        </div>
+
+        <div class="leader">
+          <h2>Leaderboard</h2>
+        </div>
       </div>
     </div>
     <script src="./main.js"></script>
